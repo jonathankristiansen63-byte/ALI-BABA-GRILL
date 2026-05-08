@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ali Baba Grill Kristiansand | Kebab, shawarma og pizza i Markens gate</title>
+    <meta
+      name="description"
+      content="Ali Baba Grill i Markens gate 35 serverer kebab, shawarma, pizza, burger og falafel midt i Kristiansand sentrum."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Ali Baba Grill">
+        <span class="brand-mark">AB</span>
+        <span>
+          <strong>Ali Baba Grill</strong>
+          <small>Kristiansand</small>
+        </span>
+      </a>
+      <nav aria-label="Hovedmeny">
+        <a href="#meny">Meny</a>
+        <a href="#stemning">Stemning</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a class="header-action" href="tel:+4794449944">Ring</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Ali Baba Grill">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Markens gate 35</p>
+          <h1>Nattmat med flamme, saus og stor appetitt.</h1>
+          <p class="hero-copy">
+            Tyrkisk og syrisk grill midt i Kristiansand sentrum. Döner, shawarma, pizza,
+            burger og falafel når du vil ha noe raskt, varmt og skikkelig digg.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://semeny.no/sted/alibaba" target="_blank" rel="noopener">Se meny</a>
+            <a class="button button-ghost" href="https://www.foodora.no/restaurant/lvao/ali-baba-kristiansand" target="_blank" rel="noopener">Bestill levering</a>
+          </div>
+          <div class="status-strip" aria-live="polite">
+            <span id="open-status">Sjekker åpningstid...</span>
+            <span>Telefon: 94 44 99 44</span>
+            <span>Takeaway og levering</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Nøkkelinformasjon">
+        <div>
+          <strong>Sentrum</strong>
+          <span>Rett ved Markens gate</span>
+        </div>
+        <div>
+          <strong>110 retter</strong>
+          <span>Pizza, kebab, shawarma og mer</span>
+        </div>
+        <div>
+          <strong>Kveldssult</strong>
+          <span>Åpent sent fredag og lørdag</span>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="section-kicker">Smaken</div>
+        <div class="intro-grid">
+          <h2>Bygget for sultne folk som vil ha mye smak uten venting.</h2>
+          <p>
+            Ali Baba Grill bør føles som et klart valg når folk søker etter kebab i
+            Kristiansand: raskt å bestille, lett å finne, og fristende nok til at mobilen
+            havner rett på ringeknappen.
+          </p>
+        </div>
+      </section>
+
+      <section class="menu-section" id="meny">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Menyfavoritter</p>
+            <h2>Velg retningen. Resten fikser grillen.</h2>
+          </div>
+          <div class="menu-tabs" role="tablist" aria-label="Menyfilter">
+            <button class="tab active" data-filter="alle" type="button">Alle</button>
+            <button class="tab" data-filter="kebab" type="button">Kebab</button>
+            <button class="tab" data-filter="pizza" type="button">Pizza</button>
+            <button class="tab" data-filter="vegetar" type="button">Vegetar</button>
+          </div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card" data-category="kebab">
+            <img src="./assets/shawarma-plate.jpg" alt="Shawarmatallerken fra Ali Baba Grill" />
+            <div>
+              <p>Döner</p>
+              <h3>Döner rull</h3>
+              <span>Salat, tomat, agurk, mais, løk og kebabdressing.</span>
+            </div>
+            <strong>159 kr</strong>
+          </article>
+          <article class="menu-card" data-category="kebab">
+            <img src="./assets/skewer-plate.jpg" alt="Grillspyd og tilbehør fra Ali Baba Grill" />
+            <div>
+              <p>Shawarma</p>
+              <h3>Kylling rull</h3>
+              <span>Saftig kylling, grønnsaker og dressing i mykt brød.</span>
+            </div>
+            <strong>159 kr</strong>
+          </article>
+          <article class="menu-card" data-category="pizza">
+            <img src="./assets/pizza-closeup.jpg" alt="Pizza hos Ali Baba Grill" />
+            <div>
+              <p>Pizza</p>
+              <h3>Alibaba spesiell</h3>
+              <span>Kebab, kylling, biff, sopp, løk, paprika og jalapenos.</span>
+            </div>
+            <strong>Fra 169 kr</strong>
+          </article>
+          <article class="menu-card" data-category="pizza">
+            <img src="./assets/pizza-closeup.jpg" alt="Pizza fra Ali Baba Grill" />
+            <div>
+              <p>Pizza</p>
+              <h3>Norge spesiell</h3>
+              <span>Tomatsaus, ost, kebab og pommes.</span>
+            </div>
+            <strong>Fra 169 kr</strong>
+          </article>
+          <article class="menu-card" data-category="vegetar">
+            <img src="./assets/skewer-plate.jpg" alt="Grilltilbehør hos Ali Baba Grill" />
+            <div>
+              <p>Vegetar</p>
+              <h3>Falafel tallerken</h3>
+              <span>Falafel, salat, pommes, brød og dressing.</span>
+            </div>
+            <strong>129 kr</strong>
+          </article>
+          <article class="menu-card" data-category="kebab">
+            <img src="./assets/hero-grill.jpg" alt="Shish kebab på grill" />
+            <div>
+              <p>Grill</p>
+              <h3>Shish kebab tallerken</h3>
+              <span>Piwazsalat, tzatziki, stekt tomat, ris og brød.</span>
+            </div>
+            <strong>Fra 229 kr</strong>
+          </article>
+        </div>
+        <p class="price-note">Priser og tilgjengelighet kan endres. Sjekk full meny før bestilling.</p>
+      </section>
+
+      <section class="split-section" id="stemning">
+        <div class="photo-panel">
+          <img src="./assets/hero-grill.jpg" alt="Grillspyd på grill hos Ali Baba Grill" />
+        </div>
+        <div class="story-panel">
+          <p class="section-kicker">Hvorfor velge Ali Baba</p>
+          <h2>Perfekt for lunsj, middag og den sene turen gjennom byen.</h2>
+          <ul class="check-list">
+            <li>Rett i Kristiansand sentrum, enkelt å hente på veien.</li>
+            <li>Meny med kebab, shawarma, pizza, burger, biffretter og vegetar.</li>
+            <li>Bestilling via nettmeny, Foodora og telefon.</li>
+          </ul>
+          <div class="story-actions">
+            <a class="button button-primary" href="tel:+4794449944">Ring og bestill</a>
+            <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Ali%20Baba%20Grill%20Markens%20gate%2035%20Kristiansand" target="_blank" rel="noopener">Få veibeskrivelse</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="hours-band" id="kontakt">
+        <div>
+          <p class="section-kicker">Kontakt</p>
+          <h2>Ali Baba Grill</h2>
+          <address>
+            Markens gate 35<br />
+            4612 Kristiansand
+          </address>
+          <a href="tel:+4794449944">94 44 99 44</a>
+        </div>
+        <div class="hours-card" aria-label="Åpningstider">
+          <h3>Åpningstider</h3>
+          <dl>
+            <div><dt>Mandag</dt><dd>13:00-23:00</dd></div>
+            <div><dt>Tirsdag-torsdag</dt><dd>12:00-23:00</dd></div>
+            <div><dt>Fredag</dt><dd>12:00-23:00</dd></div>
+            <div><dt>Lørdag</dt><dd>12:00-01:00</dd></div>
+            <div><dt>Søndag</dt><dd>12:00-00:00</dd></div>
+          </dl>
+        </div>
+        <div class="map-card">
+          <a href="https://www.google.com/maps/search/?api=1&query=Ali%20Baba%20Grill%20Markens%20gate%2035%20Kristiansand" target="_blank" rel="noopener">
+            Åpne kart
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Nettsidekonsept for Ali Baba Grill Kristiansand.</span>
+      <a href="./sources.html">Kilder og bildebruk</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
